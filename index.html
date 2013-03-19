@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQueryMobile introduction - jqm-intro</title>
+	<meta name="description" content="Introduction to the jQueryMobile framework">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+	<!-- I like to load jQuery and jQuery mobile in the head to prevent a FOUC (flash of unstyled content) -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+</head>
+<body>
+
+<div id="main" data-role="page" data-title="jQueryMobile introduction - jqm-intro" data-theme="b">
+
+	<div data-role="header">
+		<a href="#menu" data-icon="bars" data-iconpos="notext" class="ui-btn-right">Menu</a>
+		<h1>Welcome</h1>
+	</div>
+
+	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="b" id="menu">
+		<ul data-role="listview">
+			<li><a href="#main">Home</a></li>
+			<li><a href="#about" data-transition="pop">About</a></li>
+		</ul>
+	</div>
+
+	<div data-role="content">
+		
+	</div>
+</div>
+
+<div id="about" data-role="dialog" data-title="About" data-theme="b">
+	<div data-role="header">
+		<h1>About</h1>
+	</div>
+
+	<div data-role="content">
+		<p>
+			jqm-intro was designed to introduce jQueryMobile to
+			HTML and JavaScript developers.
+		</p>
+		<p>
+		</p>
+
+		<div data-role="collapsible" data-inset="false" data-content-theme="b" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+			<h3>Under the hood</h3>
+			<ul data-role="listview" data-inset="false">
+				<li><a href="https://github.com/adutton/jqm-intro/" target="_blank">View source (at GitHub)</a></li>
+				<li><a href="http://html5boilerplate.com/" target="_blank">HTML 5 Boilerplate</a></li>
+				<li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+				<li><a href="http://jquerymobile.com/" target="_blank">jQueryMobile</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
