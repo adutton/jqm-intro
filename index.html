@@ -9,92 +9,96 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-	<!-- I like to load jQuery and jQuery mobile in the head to prevent a FOUC (flash of unstyled content) -->
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
 </head>
 <body>
 
-<div id="main" data-role="page" data-title="jQueryMobile introduction - jqm-intro" data-theme="b">
+	<div id="main" data-role="page" data-title="jQueryMobile introduction - jqm-intro" data-theme="b">
 
-	<div data-role="header">
-		<a href="#menu" data-icon="bars" data-iconpos="notext" class="ui-btn-right">Menu</a>
-		<h1>Welcome</h1>
-	</div>
-
-	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="b" id="menu">
-		<ul data-role="listview">
-			<li><a href="#main">Home</a></li>
-			<li><a href="#about" data-transition="pop">About</a></li>
-		</ul>
-	</div>
-
-	<div data-role="content">
-		<div data-role="collapsible-set" data-theme="b" data-content-theme="b" data-inset="false">
-			<div data-role="collapsible">
-				<h3>Who am I</h3>
-				<div style="height:300px">
-					
-					
-					<img src="http://www.gravatar.com/avatar/b514c8a067bea4798fe21b5822d1bba7?s=250" height="250" width="250" style="float:left; margin-right: 40px" />
-					<div style="left: 20px; margin-left: 20px; padding-left: 20px">
-						<h3>Aaron Dutton</h3>
-						<ul>						
-							<!-- As you will see in this presentation, I am -->
-							<li style="padding: 5px">NOT a front-end developer</li>
-							<li style="padding: 5px">NOT a CSS guru</li>
-							<li style="padding: 5px">Use HTML, CSS, JavaScript and C# in my job</li>
-							<li style="padding: 5px">Have used jQueryMobile for two sites</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div data-role="collapsible">
-				<h3>What is a mobile framework?</h3>
-				<p>Generally lighter, faster</p>
-				<p>Touch-friendly</p>
-				<p>Generally include some pre-made decisions on style</p>
-				<p>Support some subset of "desktop" functionality</p>
-				<p>Single-page functionality</p>
-			</div>
-			<div data-role="collapsible">
-				<h3>Why use a mobile framework?</h3>
-				<p>Mobile is often an after-thought</p>
-				<p>When designing mobile-first</p>
-			</div>
-			<div data-role="collapsible">
-				<h3>Comparisons</h3>
-				<p><a href="http://jquerymobile.com/">jQueryMobile</a> "Touch-Optimized Web Framework for Smartphones & Tablets."</p>
-				<p><a href="http://twitter.github.com/bootstrap/">Bootstrap</a> "Sleek, intuitive, and powerful front-end framework for faster and easier web development."</p>
-				<p><a href="http://app-framework-software.intel.com/">jqMobi/Intel App Framework</a> "The definitive javascript library for mobile HTML5 app development"</p>				
-				<p><a href="http://www.sencha.com/products/touch">Sencha Touch</a> "Build universal, mobile web apps for any device and platform."</p>
-				<p>No framework or light framework - responsive design</p>
-			</div>
+		<div data-role="header">
+			<a href="#menu" data-icon="bars" data-iconpos="notext" class="ui-btn-right">Menu</a>
+			<h1>Welcome</h1>
 		</div>
-	</div>
-</div>
 
-<div id="about" data-role="dialog" data-title="About" data-theme="b">
-	<div data-role="header">
-		<h1>About</h1>
-	</div>
-
-	<div data-role="content">
-		<p>
-			jqm-intro was designed to introduce jQueryMobile to
-			HTML and JavaScript developers.
-		</p>
-
-		<div data-content-theme="b">
-			<ul data-role="listview" data-inset="true">
-				<li><a href="https://github.com/adutton/jqm-intro/" target="_blank">View source (at GitHub)</a></li>
-				<li><a href="http://jquerymobile.com/" target="_blank">jQueryMobile</a></li>
-				<li><a href="http://html5boilerplate.com/" target="_blank">HTML 5 Boilerplate</a></li>
-				<li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+		<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="b" id="menu">
+			<ul data-role="listview">
+				<li><a href="#main">Home</a></li>
+				<li><a href="#about" data-transition="pop">About</a></li>
 			</ul>
 		</div>
-	</div>
-</div>
 
+		<div data-role="content">
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="b" data-inset="false">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>Introduction</h3>
+					<img src="http://view.jquerymobile.com/1.3.0/docs/_assets/img/jquery-logo.png" />
+				</div>
+				<div data-role="collapsible">
+					<h3>Who am I</h3>
+					<div style="height:300px">
+
+
+						<img src="http://www.gravatar.com/avatar/b514c8a067bea4798fe21b5822d1bba7?s=250" height="250" width="250" style="float:left; margin-right: 40px" />
+						<div style="left: 20px; margin-left: 20px; padding-left: 20px">
+							<h3>Aaron Dutton</h3>
+							<ul>
+								<!-- As you will see in this presentation, I am -->
+								<li style="padding: 5px">NOT a front-end developer</li>
+								<li style="padding: 5px">NOT a CSS guru</li>
+								<li style="padding: 5px">Use HTML, CSS, JavaScript and C# in my job</li>
+								<li style="padding: 5px">Have used jQueryMobile for two sites</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div data-role="collapsible">
+					<h3>What is a mobile framework?</h3>
+					<p>Generally lighter, faster</p>
+					<p>Touch-friendly</p>
+					<p>Generally include some pre-made decisions on style</p>
+					<p>Support some subset of "desktop" functionality</p>
+					<p>Single-page functionality</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Why use a mobile framework?</h3>
+					<p>Mobile is often an after-thought</p>
+					<p>When designing mobile-first</p>
+					<p>When designing an app</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Comparisons</h3>
+					<p><a href="http://jquerymobile.com/">jQueryMobile</a> "Touch-Optimized Web Framework for Smartphones & Tablets."</p>
+					<p><a href="http://twitter.github.com/bootstrap/">Bootstrap</a> "Sleek, intuitive, and powerful front-end framework for faster and easier web development."</p>
+					<p><a href="http://app-framework-software.intel.com/">jqMobi/Intel App Framework</a> "The definitive javascript library for mobile HTML5 app development"</p>
+					<p><a href="http://www.sencha.com/products/touch">Sencha Touch</a> "Build universal, mobile web apps for any device and platform."</p>
+					<p>No framework or light framework - responsive design</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="about" data-role="dialog" data-title="About" data-theme="b">
+		<div data-role="header">
+			<h1>About</h1>
+		</div>
+
+		<div data-role="content">
+			<p>
+				jqm-intro was designed to introduce jQueryMobile to
+				HTML and JavaScript developers.
+			</p>
+
+			<div data-content-theme="b">
+				<ul data-role="listview" data-inset="true">
+					<li><a href="https://github.com/adutton/jqm-intro/" target="_blank">View source (at GitHub)</a></li>
+					<li><a href="http://jquerymobile.com/" target="_blank">jQueryMobile</a></li>
+					<li><a href="http://html5boilerplate.com/" target="_blank">HTML 5 Boilerplate</a></li>
+					<li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
 </body>
 </html>
