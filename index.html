@@ -51,6 +51,7 @@
 				<li><a href="#whatframework">What is a mobile framework?</a></li>
 				<li><a href="#whyframework">Why use a mobile framework?</a></li>
 				<li><a href="#whichframework">Which mobile framework?</a></li>
+				<li><a href="#goodbadugly">The Good, the Bad, the Ugly</a></li>
 			</ul>
 		</div>
 
@@ -96,16 +97,16 @@
 		<div data-role="content" style="text-align:center">
 			<img src="http://www.gravatar.com/avatar/b514c8a067bea4798fe21b5822d1bba7?s=250" width="50%" style="margin:20px;" />
 
-			<div data-role="collapsible">
+			<div data-role="collapsible" data-content-theme="c">
 				<h3>I am NOT:</h3>
-				<ul data-role="listview" data-theme="c">
+				<ul data-role="listview">
 					<li>a front-end developer</li>
 					<li>a CSS guru</li>
 				</ul>
 			</div>
-			<div data-role="collapsible">
+			<div data-role="collapsible" data-content-theme="c">
 				<h3>I do:</h3>
-				<ul data-role="listview" data-theme="c">
+				<ul data-role="listview">
 					<li>Use HTML, CSS, JavaScript and C# in my job</li>
 					<li>Use jQueryMobile for two sites</li>
 				</ul>
@@ -144,19 +145,19 @@
 			<h1>What is a mobile framework?</h1>
 		</div>
 		<div data-role="content" style="text-align:center">
-			<div data-role="collapsible">
+			<div data-role="collapsible" data-content-theme="c">
 				<h3>Mobile</h3>
 				<a title="By HLundgaard (Own work) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AMobile_devices_DSC_0988.JPG"><img width="512" alt="Mobile devices DSC 0988" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mobile_devices_DSC_0988.JPG/512px-Mobile_devices_DSC_0988.JPG"/></a>
-				<ul data-role="listview" data-theme="c">
+				<ul data-role="listview">
 					<li>Adaptable to screen-size</li>
 					<li>Lighter-weight, faster</li>
 					<li>Touch-friendly</li>
 				</ul>
 			</div>
-			<div data-role="collapsible">
+			<div data-role="collapsible" data-content-theme="c">
 				<h1>Framework</h1>
 				<a title="By Astris1 (Own work) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3ALorimerlite_framework.JPG"><img width="512" alt="Lorimerlite framework" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Lorimerlite_framework.JPG/512px-Lorimerlite_framework.JPG"/></a>
-				<ul data-role="listview" data-theme="c" data-inset="false">
+				<ul data-role="listview" data-inset="false">
 					<li>Can be built upon</li>
 					<li>Includes decisions on style</li>
 				</ul>
@@ -206,29 +207,28 @@
 			<h1>Why use a mobile framework?</h1>
 		</div>
 		<div data-role="content">
-			<div data-role="collapsible">
+			<div data-role="collapsible" data-content-theme="c">
 				<h3>Limited, mobile version</h3>
 				
-				<ul data-role="listview" data-theme="c">
+				<ul data-role="listview">
 					<li><a href="http://m.ikea.com/us/en/" target="_blank">Ikea</a></li>
-					<li></li>
 				</ul>
 			</div>
-			<div data-role="collapsible">
+			<div data-role="collapsible" data-content-theme="c">
 				<h3>Mobile-first</h3>
 				
-				<ul data-role="listview" data-theme="c">
+				<ul data-role="listview">
 					<li><a href="http://m.disneyworld.disney.go.com/" target="_blank">Disney World</a></li>
 					<li><a href="https://mobile.united.com/" target="_blank">United Airlines</a></a></li>
 				</ul>
 			</div>
 
-			<div data-role="collapsible">
+			<div data-role="collapsible" data-content-theme="c">
 				<h3>For an app</h3>
 				
-				<ul data-role="listview" data-theme="c">
+				<ul data-role="listview">
 					<li><a href="http://bakerskireport.com/" target="_blank">Baker Ski Report</a></li>
-					<li>http://coenraets.org/blog/2011/10/sample-application-with-jquery-mobile-and-phonegap/</li>
+					<li><a href="http://coenraets.org/blog/2011/10/sample-application-with-jquery-mobile-and-phonegap/" target="_blank">Sample app with Phonegap</a></li>
 				</ul>
 			</div>
 		</div>
@@ -240,12 +240,22 @@
 					There are three primary uses for a mobile framework.
 				</p>
 				<p>
-					First, when designing
+					First, when designing a limited version of a mobile site.  Two examples that come to mind
+					are Amazon and eBay, although they were designed without jQueryMobile.  Basically, when you
+					want to give mobile users something that's easy to use but doesn't do everything the
+					"real" site does.
+				</p>
+				<p>
+					Another use of mobile frameworks is for mobile-first sites.  Something that was designed
+					from scratch for mobile usage.  
+				</p>
+				<p>
+					Finally, some mobile app developers are using HTML and JavaScript to make more cross-
+					platform apps without having to substantially rewrite the code.
 				</p>
 			</div>
 		</div>
 	</div>
-
 
 	<div id="whichframework" data-role="page" data-title="Which mobile framework?" data-theme="b">
 		<div data-role="header">
@@ -253,22 +263,108 @@
 			<h1>Which mobile framework?</h1>
 		</div>
 		<div data-role="content">
-			<p><a href="http://jquerymobile.com/" target="_blank">jQueryMobile</a> "Touch-Optimized Web Framework for Smartphones & Tablets."</p>
-			<p><a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a> "Sleek, intuitive, and powerful front-end framework for faster and easier web development."</p>
-			<p><a href="http://www.sencha.com/products/touch" target="_blank">Sencha Touch</a> "Build universal, mobile web apps for any device and platform."</p>
-			<p><a href="http://app-framework-software.intel.com/" target="_blank">jqMobi/Intel App Framework</a> "The definitive javascript library for mobile HTML5 app development"</p>
-			<p>Responsive design</p>
-			<p>Many, many others</p>
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>Bootstrap</h3>
+				<p>
+					"Sleek, intuitive, and powerful front-end framework for faster and easier web development."
+				</p>
+				<a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap website</a>
+			</div>
+			
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>Sencha Touch</h3>
+				<p>
+					"Build universal, mobile web apps for any device and platform."
+				</p>
+				<a href="http://www.sencha.com/products/touch" target="_blank">Sencha Touch website</a>
+			</div>
+			
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>jqMobi/Intel App Framework</h3>
+				<p>
+					"The definitive javascript library for mobile HTML5 app development"
+				</p>
+				<a href="http://app-framework-software.intel.com/" target="_blank">jqMobi/Intel App Framework website</a>
+			</div>
+			
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>jQueryMobile</h3>
+				<p>
+					"Touch-Optimized Web Framework for Smartphones & Tablets."
+				</p>
+				<a href="http://jquerymobile.com/" target="_blank">jQueryMobile website</a>
+			</div>
 		</div>
 
 		<div data-role="footer" class="notes">
 			<div data-role="collapsible" data-content-theme="d" data-collapsed="false" data-inset="false">
 				<h4>Speaker Notes</h4>
-				<p>Nails why and why not to use jQueryMobile: http://niallohiggins.com/2011/09/23/3-pros-cons-mobile-apps-with-jquery-mobile-and-html5/</p>
+				<p>
+				</p>
 			</div>
 		</div>
 	</div>
 
+	
+	<div id="goodbadugly" data-role="page" data-title="The Good, the Bad, the Ugly" data-theme="b">
+		<div data-role="header">
+			<a href="#main" data-rel="back" data-icon="arrow-l">Back</a>
+			<h1>The Good, the Bad, the Ugly</h1>
+		</div>
+		<div data-role="content">
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>The Ugly</h3>
+				<ul data-role="listview">
+					<li>It's not native</li>
+				</ul>
+			</div>
+			
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>The Bad</h3>
+				<ul data-role="listview">
+					<li>Quirky</li>
+				</ul>
+			</div>
+
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>The Good</h3>
+				<ul data-role="listview">
+					<li>Easy to learn</li>
+					<li>Avoid the app store</li>
+					<li>Cross-device</li>
+				</ul>
+			</div>
+
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>More info</h3>
+				<p>
+					Blog post on <a href="http://niallohiggins.com/2011/09/23/3-pros-cons-mobile-apps-with-jquery-mobile-and-html5/" target="_blank">procs and cons of jQueryMobile</a>
+				</p>
+			</div>
+		</div>
+
+		<div data-role="footer" class="notes">
+			<div data-role="collapsible" data-content-theme="d" data-collapsed="false" data-inset="false">
+				<h4>Speaker Notes</h4>
+				<p>
+					I don't like ending on a negative note, so I am going to reverse the order here
+				</p>
+				<h4>Cons:</h4>
+				<ul>
+					<li>It's not native - slower, less responsive</li>
+					<li>It's not native - have to fill in native capabilities with something else</li>					
+					<li>Quirky - have to do add JavaScript calls that are not intuitive</li>
+					<li>Quirky - forced into using a particular style unless you really roll your own</li>				
+				</ul>
+				<h4>Pros:</h4>
+				<ul>
+					<li>Easy to learn - Little learning curve, quick to iterate because of HTML5 nature</li>
+					<li>Avoid the app store - No approval, no machine debugging, any platform</li>
+					<li>Cross-platform/cross-device - write once, use everywhere</li>
+				</ul>					
+			</div>
+		</div>
+	</div>
 
 	<div id="about" data-role="dialog" data-title="About" data-theme="b">
 		<div data-role="header">
